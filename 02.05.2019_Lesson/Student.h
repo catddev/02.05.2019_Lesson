@@ -7,11 +7,21 @@
 //указывается от какого класса наследование, если написать public то все методы из родительского public наследуются как public
 // class Student: private Human
 class Student:public Human {
+private:
+	string group;
+	int grade;
 public:
 	/*void print() {
 		cout << this->name << " " << surname << " " << age << endl;
 	}*/
 	Student(): Human(){}
-	Student(string name, string surname, int age):Human(name, surname, age){}
+	//конструкторы для родителей и детей прописывать отдельно!
+	Student(string name, string surname, int age, string group, int grade):Human(name, surname, age){
+		this->group = group;
+		this->grade = grade;
+	}
+	//когда для ребенка пишем свой принт(), то родительский принт деактивируется
+	//но если его назвать по другому, то родительский принт будет работать
+	void print();
 
 };

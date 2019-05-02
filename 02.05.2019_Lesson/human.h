@@ -12,6 +12,16 @@ protected: //чтобы у дочернего класса private свойст�
 public:
 	Human();
 	Human(string name, string surname, int age);
+	void print() {
+		cout << name << " " << surname << " " << age << endl;
+	}
 
+	string getName();
+	string getSurname();
+	int getAge();
+	
+	void setName(string n);
+	void setSurname(string sn);
+	void setAge(int age);
 
 };
