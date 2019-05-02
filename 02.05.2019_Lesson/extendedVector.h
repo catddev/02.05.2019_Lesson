@@ -11,8 +11,10 @@ public:
 	~extendedVector();
 	void del_front();
 	void add_front(T el);
+
 	//void add_pos(T el);
 	//void del_pos();
+	//void empty();
 };
 
 template<typename T>

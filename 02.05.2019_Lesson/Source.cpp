@@ -33,8 +33,8 @@ int main() {
 		eV.add(777);
 	}
 	
-	//eV.del();
-	//eV.del_front();
+	eV.del();
+	eV.del_front();
 	cout << endl;
 	eV.print();
 
