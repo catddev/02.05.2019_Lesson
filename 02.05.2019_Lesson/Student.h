@@ -20,8 +20,13 @@ public:
 		this->group = group;
 		this->grade = grade;
 	}
+	~Student()
+	{
+		//cout << "Destructor STUDENT" << endl;
+	}
+
 	//когда для ребенка пишем свой принт(), то родительский принт деактивируется
 	//но если его назвать по другому, то родительский принт будет работать
 	void print();
-
+	friend ostream& operator<<(ostream & os, Student obj);
 };

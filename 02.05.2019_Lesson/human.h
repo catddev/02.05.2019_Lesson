@@ -15,6 +15,10 @@ public:
 	void print() {
 		cout << name << " " << surname << " " << age << endl;
 	}
+	~Human()
+	{
+		//cout << "Destructor HUMAN" << endl;
+	}
 
 	string getName();
 	string getSurname();
