@@ -125,7 +125,7 @@ inline void Vector<T>::operator()(T v)
 template<typename T>
 inline void Vector<T>::print()
 {
-	for (int i = 0; i < Vector<T>::cur_size; i++)// cur_szie because size() not allowed as it is pure
+	for (int i = 0; i < Vector<T>::cur_size; i++)// cur_size because size() not allowed as it is pure
 		cout << setw(5) << left << els[i] << " ";
 	cout << endl << endl;
 }
